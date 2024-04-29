@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Rooh</string>
+
+    <array name="user_type">
+        <item>Select Type</item>
+        <item>Guardian</item>
+        <item>Doctor</item>
+    </array>
+
+</resources>

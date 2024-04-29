@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "964005673452",
+    "firebase_url": "https://test66-ba62e-default-rtdb.firebaseio.com",
+    "project_id": "test66-ba62e",
+    "storage_bucket": "test66-ba62e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964005673452:android:ce28ff503a38e6e00f68c9",
+        "android_client_info": {
+          "package_name": "com.students.rooh"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA69qS7NXXyOPS5O7u_jEXtDPWZDq5CIhg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

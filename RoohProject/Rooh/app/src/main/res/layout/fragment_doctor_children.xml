@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".doctor.fragments.DoctorChildrenFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/custom_light_blue">
+
+        <EditText
+            android:id="@+id/textSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search.."
+            android:autofillHints="Child's Name.."
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:background="@drawable/round_white_stroked_bg"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="20dp"
+            android:drawableStart="@drawable/search"
+            android:drawablePadding="20dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/textSearch"/>
+
+    </RelativeLayout>
+
+</layout>

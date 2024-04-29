@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".guardian.fragments.GuardianAddChildFragment">
+
+    <data>
+        <variable
+            name="child"
+            type="com.students.rooh.classes.Child" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/custom_light_blue">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:text="Add Child"
+            android:textColor="@color/black"
+            android:background="@drawable/round_white_bg"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:paddingVertical="10dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="true"
+            android:orientation="vertical"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_margin="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:text="Child's Name:"
+                    android:background="@drawable/round_light_blue_bg"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="20dp"/>
+
+                <EditText
+                    android:id="@+id/textChildName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Child's Name.."
+                    android:autofillHints="Child's Name.."
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:text="@={child.name}"
+                    android:background="@drawable/round_white_stroked_bg"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="2dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:text="Child's Age:"
+                    android:background="@drawable/round_light_blue_bg"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinnerMonth"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/round_white_stroked_bg"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <Spinner
+                        android:id="@+id/spinnerYear"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/round_white_stroked_bg"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:text="Health Status:"
+                    android:background="@drawable/round_light_blue_bg"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="20dp"/>
+
+                <EditText
+                    android:id="@+id/textHealthStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Health Status.."
+                    android:autofillHints="Health Status.."
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:text="@={child.healthStatus}"
+                    android:background="@drawable/round_white_stroked_bg"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="2dp"/>
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switchOtherGuardian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Another Guardian"
+                    android:layout_margin="20dp"
+                    app:switchPadding="20sp"
+                    android:checked="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:text="Other Guardian Name:"
+                    android:background="@drawable/round_light_blue_bg"
+                    android:layout_marginHorizontal="20dp"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="20dp"/>
+
+                <EditText
+                    android:id="@+id/textOtherGuardianName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Other Guardian Name.."
+                    android:autofillHints="Other Guardian Name.."
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:text="@={child.otherGuardianName}"
+                    android:background="@drawable/round_white_stroked_bg"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="2dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:text="Other Guardian Phone:"
+                    android:background="@drawable/round_light_blue_bg"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="20dp"/>
+
+                <EditText
+                    android:id="@+id/textOtherGuardianPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Other Guardian Phone.."
+                    android:autofillHints="Other Guardian Phone.."
+                    android:inputType="phone"
+                    android:textColor="@color/black"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:text="@={child.otherGuardianPhone}"
+                    android:background="@drawable/round_white_stroked_bg"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="2dp"/>
+
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_grey_button"
+                    android:layout_margin="40dp"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="40dp"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    app:backgroundTint="@null"
+                    android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</layout>

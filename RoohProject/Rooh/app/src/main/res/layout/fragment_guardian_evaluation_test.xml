@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".guardian.fragments.GuardianEvaluationTestFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/custom_light_blue">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="true"
+            android:orientation="vertical"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/round_light_grey_bg"
+                    android:layout_margin="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/question"
+                        android:importantForAccessibility="no"
+                        android:layout_marginHorizontal="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="22sp"
+                        android:text="Evaluation Test"
+                        android:textColor="@color/black"
+                        android:layout_marginHorizontal="20dp"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:background="@color/white"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp">
+
+                    <CheckBox
+                        android:id="@+id/checkbox1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:scaleX="1.5"
+                        android:scaleY="1.5"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/purple_700"
+                        android:layout_toStartOf="@id/checkbox1"
+                        android:text="Persistent or severe cough"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:background="@color/white"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:layout_marginTop="20dp">
+
+                    <CheckBox
+                        android:id="@+id/checkbox2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:scaleX="1.5"
+                        android:scaleY="1.5"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/purple_700"
+                        android:layout_toStartOf="@id/checkbox2"
+                        android:text="Chest pain or hearing wheezing"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:background="@color/white"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:layout_marginTop="20dp">
+
+                    <CheckBox
+                        android:id="@+id/checkbox3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:scaleX="1.5"
+                        android:scaleY="1.5"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/purple_700"
+                        android:layout_toStartOf="@id/checkbox3"
+                        android:text="Difficulty breathing or rapid breathing."
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:background="@color/white"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:layout_marginTop="20dp">
+
+                    <CheckBox
+                        android:id="@+id/checkbox4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:scaleX="1.5"
+                        android:scaleY="1.5"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/purple_700"
+                        android:layout_toStartOf="@id/checkbox4"
+                        android:text="General fatigue or drowsiness"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:background="@color/white"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:layout_marginTop="20dp">
+
+                    <CheckBox
+                        android:id="@+id/checkbox5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:scaleX="1.5"
+                        android:scaleY="1.5"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/purple_700"
+                        android:layout_toStartOf="@id/checkbox5"
+                        android:text="Dizziness or lightheadedness."
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:background="@color/white"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:layout_marginTop="20dp">
+
+                    <CheckBox
+                        android:id="@+id/checkbox6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:scaleX="1.5"
+                        android:scaleY="1.5"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/purple_700"
+                        android:layout_toStartOf="@id/checkbox6"
+                        android:text="Paleness or blueness of the skin"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btnResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_grey_button"
+                    android:layout_marginTop="40dp"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="40dp"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    app:backgroundTint="@null"
+                    android:text="The Result"
+                    android:drawableStart="@drawable/result"
+                    android:drawablePadding="20dp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <LinearLayout
+                    android:id="@+id/resultContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:background="@color/white"
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/textResult"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:padding="20dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</layout>

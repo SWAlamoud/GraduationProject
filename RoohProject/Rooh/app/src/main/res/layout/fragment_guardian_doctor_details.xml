@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".guardian.fragments.GuardianDoctorDetailsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/custom_light_blue">
+
+        <LinearLayout
+            android:id="@+id/titleContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Contact With Doctor"
+                android:layout_marginVertical="20dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/black"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginVertical="20dp"
+            android:layout_below="@+id/titleContainer"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/doctor_placeholder"
+            android:importantForAccessibility="no"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:id="@+id/btnSendChatRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_grey_button"
+            android:layout_marginVertical="10dp"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="40dp"
+            android:text="Send Chat Request"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:backgroundTint="@null"
+            android:drawableStart="@drawable/chat"
+            android:drawablePadding="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnStartChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_grey_button"
+            android:layout_marginVertical="10dp"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="40dp"
+            android:text="Start Chat"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:backgroundTint="@null"
+            android:drawableStart="@drawable/chat"
+            android:drawablePadding="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</layout>

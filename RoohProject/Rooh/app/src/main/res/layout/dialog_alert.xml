@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/round_white_bg">
+
+        <TextView
+            android:id="@+id/labelTitleCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/btnCall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:paddingTop="40dp"
+            android:paddingBottom="40dp"
+            android:layout_marginHorizontal="40dp"
+            android:background="@drawable/round_red_button"
+            android:text="Call Red Crescent"
+            app:backgroundTint="@null"/>
+
+        <Button
+            android:id="@+id/btnNoNeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:layout_marginVertical="20dp"
+            android:textSize="18sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingHorizontal="40dp"
+            android:background="@drawable/round_green_button"
+            android:text="No Need"
+            app:backgroundTint="@null"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+</layout>
